@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultoría Tecnológica | Inteligencia Artificial, Automatización Industrial, Domótica & SaaS</title>
+  <meta name="description"
+    content="Consultoría de Inteligencia Artificial, automatizaciones industriales, casas inteligentes y plataformas SaaS a la medida. Soluciones de alto impacto.">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <!-- Tipografía estilo AWS (Amazon Ember / Open Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Hojas de estilo del sistema -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================================
+       ENCABEZADO & NAVEGACIÓN PRINCIPAL
+       ===================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-container">
+      <a href="#inicio" class="brand-wrapper" aria-label="Ir al inicio">
+        <!-- Logotipo Principal -->
+        <img src="logo.PNG" alt="Logotipo Consultoría de Tecnología e Inteligencia Artificial" class="brand-logo"
+          id="headerLogo">
+      </a>
+
+      <!-- Menú de Navegación -->
+      <nav aria-label="Navegación principal">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#quienes-somos" class="nav-link">Quiénes somos</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#nuestros-trabajos" class="nav-link">Nuestros trabajos</a></li>
+          <li><a href="#facturacion" class="nav-link">Facturación</a></li>
+          <li><a href="#contactanos" class="nav-link">Contáctanos</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botones de Acción Directa -->
+      <div class="header-actions">
+
+        <!-- Botón Hamburguesa Móvil -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú de navegación">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =====================================================================
+         HERO SECTION (CON SOPORTE DE IMAGEN DE FONDO)
+         Nota: Para poner tu imagen de fondo en el Hero, puedes definir en css/style.css:
+         --bg-hero-image: url('../tu-imagen.jpg'); o colocar la ruta aquí en el style inline.
+         ===================================================================== -->
+    <section class="hero" id="inicio">
+      <!-- Capa de imagen de fondo configurable -->
+      <div class="hero-bg-wrapper" id="heroBgImage"></div>
+      <div class="hero-bg-overlay"></div>
+      <div class="tech-grid-overlay"></div>
+
+      <div class="container hero-content">
+        <div class="hero-text-col">
+
+          <h1 class="hero-title">
+            Soluciones en <span class="text-gradient">Inteligencia Artificial</span> y automatizaciones
+          </h1>
+
+          <p class="hero-description">
+            Diseñamos e implementamos ecosistemas de computación cognitiva, automatizaciones industriales de misión
+            crítica, domótica de alta gama y plataformas SaaS escalables.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#contactanos" class="btn btn-primary btn-lg">
+              <span>Contactar Especialista</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- API de WhatsApp Directo -->
+            <a href="#" class="btn btn-whatsapp btn-lg" data-api="whatsapp"
+              data-message="Hola, deseo agendar una consulta técnica sobre proyectos de automatización e IA.">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.861.884 2.802.884 3.181 0 5.767-2.586 5.767-5.766.001-3.18-2.585-5.771-5.773-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.227-.563-1.833-.764-3.003-2.617-3.095-2.739-.089-.122-.74-1.002-.74-1.921 0-.918.472-1.371.64-1.562.169-.191.369-.239.493-.239.124 0 .248.002.355.008.113.006.264-.043.413.315.155.371.531 1.298.577 1.393.046.094.077.205.016.326-.062.121-.093.197-.185.305-.093.109-.195.244-.278.328-.093.093-.19.195-.082.38.109.186.482.795 1.035 1.288.711.633 1.31.83 1.497.923.186.094.296.079.406-.047.112-.128.478-.557.606-.749.127-.191.256-.16.429-.095.174.065 1.104.52 1.295.615.191.096.319.143.365.223.047.079.047.46-.097.865z" />
+                <path
+                  d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.385C8.423 21.495 10.155 22 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm0 18.2c-1.634 0-3.155-.494-4.425-1.341l-.317-.213-3.287.913.918-3.208-.231-.334C3.738 14.678 3.2 13.393 3.2 12c0-4.852 3.948-8.8 8.8-8.8 4.853 0 8.8 3.948 8.8 8.8 0 4.852-3.947 8.2-8.8 8.2z" />
+              </svg>
+              <span>Hablar por WhatsApp</span>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <h3>99.9<span>%</span></h3>
+              <p>Confiabilidad Operativa</p>
+            </div>
+            <div class="stat-item">
+              <h3>+50</h3>
+              <p>Sistemas Implementados</p>
+            </div>
+            <div class="stat-item">
+              <h3>24/7</h3>
+              <p>Telemetría & Soporte</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN: SERVICIOS Y SOLUCIONES
+         ===================================================================== -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Nuestras Especialidades</div>
+          <h2 class="section-title">Ecosistema Tecnológico de Extremo a Extremo</h2>
+          <p class="section-desc">
+            Transformamos retos operativos y residenciales en ventajas competitivas mediante ingeniería aplicada de alta
+            precisión y software de nivel enterprise.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Servicio 1: Inteligencia Artificial -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83">
+                </path>
+              </svg>
+            </div>
+            <h3 class="service-title">Inteligencia Artificial</h3>
+            <p class="service-description">
+              Implementación de modelos de visión por computadora para detección de defectos, agentes inteligentes con
+              RAG y analítica predictiva de datos.
+            </p>
+            <ul class="service-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Visión Computacional & Inspección OCR/YOLO</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Agentes de Lenguaje RAG y Asistentes IA</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Modelos Predictivos y Mantenimiento Proactivo</span>
+              </li>
+            </ul>
+            <div class="service-footer-action">
+              <a href="#contactanos" class="service-link">
+                <span>Consultar Solución</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Servicio 2: Automatizaciones Industriales -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Automatizaciones Industriales</h3>
+            <p class="service-description">
+              Programación de controladores lógicos programables (PLC), integración de brazos robóticos y telemetría
+              SCADA bajo normativas industriales internacionales.
+            </p>
+            <ul class="service-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Programación PLC Siemens, Rockwell, Schneider</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Sistemas HMI/SCADA e integración OPC UA</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Células Robóticas y Seguridad Maquinaria</span>
+              </li>
+            </ul>
+            <div class="service-footer-action">
+              <a href="#contactanos" class="service-link">
+                <span>Consultar Solución</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Servicio 3: Casas Inteligentes -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <circle cx="12" cy="14" r="2"></circle>
+              </svg>
+            </div>
+            <h3 class="service-title">Casas Inteligentes</h3>
+            <p class="service-description">
+              Domótica residencial premium con protocolos KNX, DALI y Zigbee. Control unificado de iluminación, clima,
+              audio multi-habitación y accesos biométricos.
+            </p>
+            <ul class="service-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Iluminación Circadiana y Control de Escenas</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Gestión Energética y Climatización Inteligente</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Seguridad Perimetral & Audio High-End</span>
+              </li>
+            </ul>
+            <div class="service-footer-action">
+              <a href="#contactanos" class="service-link">
+                <span>Consultar Solución</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Servicio 4: Softwares as a Service (SaaS) -->
+          <article class="service-card">
+            <div class="service-icon-box">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="service-title">Software as a Service (SaaS)</h3>
+            <p class="service-description">
+              Desarrollo de plataformas cloud modernas, dashboards en tiempo real, APIs de alta concurrencia y portales
+              B2B con arquitectura multi-inquilino.
+            </p>
+            <ul class="service-features">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Arquitecturas Cloud Serverless y Microservicios</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Paneles de Telemetría y Analítica en Vivo</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>
+                <span>Integraciones API & Pasarelas de Cobro</span>
+              </li>
+            </ul>
+            <div class="service-footer-action">
+              <a href="#contactanos" class="service-link">
+                <span>Consultar Solución</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN: QUIÉNES SOMOS
+         ===================================================================== -->
+    <section class="section section-light" id="quienes-somos">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="section-tag">Nuestra Identidad</div>
+            <h2 class="section-title" style="color: var(--color-carbon);">Ingeniería, Innovación y Rigor Técnico</h2>
+            <p class="lead">
+              Unimos la solidez de la automatización física con la inteligencia de los algoritmos y la agilidad de la
+              nube.
+            </p>
+            <p>
+              Somos un equipo multidisciplinario de ingenieros en mecatrónica, científicos de datos, arquitectos de
+              software y consultores de automatización. Nuestra misión es eliminar fricciones operativas mediante
+              soluciones robustas, seguras y diseñadas a la medida de cada industria o espacio residencial.
+            </p>
+            <p>
+              No creemos en soluciones genéricas: cada proyecto parte de un diagnóstico exhaustivo de hardware, software
+              y viabilidad económica para garantizar un retorno de inversión comprobable.
+            </p>
+
+            <div class="about-pillars">
+              <div class="about-pillar-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                  </svg>
+                  <span>Robustez Industrial</span>
+                </h4>
+                <p>Estándares de grado militar y continuidad operativa 99.9%.</p>
+              </div>
+
+              <div class="about-pillar-card">
+                <h4>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                  </svg>
+                  <span>Ciberseguridad y Datos</span>
+                </h4>
+                <p>Encriptación de extremo a extremo en redes OT e infraestructuras IT.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Muestra de Logotipos de Marca -->
+          <div class="about-visual-box">
+            <div class="about-logos-showcase">
+              <img src="logo.PNG" alt="Logotipo Principal de la Consultora" class="about-logo-main">
+              <img src="logo2.PNG" alt="Isotipo Oficial de la Consultora" class="about-logo-sub">
+            </div>
+
+            <div class="about-badge-card">
+              <strong
+                style="color: var(--color-coral); display: block; font-size: 1.1rem; margin-bottom: 0.35rem;">Compromiso
+                de Ingeniería</strong>
+              Acompañamiento desde la conceptualización y prototipado hasta la puesta en marcha en sitio y soporte
+              continuo.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN: NUESTROS TRABAJOS (MODULAR & SENCILLO DE MODIFICAR)
+         Nota: Para editar o agregar proyectos reales, puedes:
+         1. Modificar el array 'projectsData' en js/app.js (Recomendado y más rápido).
+         2. O insertar tus tarjetas fijas dentro del contenedor #portfolioGrid.
+         ===================================================================== -->
+    <section class="section" id="nuestros-trabajos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Portafolio & Casos de Éxito</div>
+          <h2 class="section-title">Nuestros Trabajos</h2>
+          <p class="section-desc">
+            Casos aplicados en sectores industriales, corporativos y de residencia exclusiva. Esta sección está
+            estructurada de forma modular para actualizarse en minutos.
+          </p>
+        </div>
+
+        <!-- Filtros de Categoría -->
+        <div class="portfolio-controls" id="portfolioFilters">
+          <button class="portfolio-filter-btn active" data-filter="all">Todos los Proyectos</button>
+          <button class="portfolio-filter-btn" data-filter="ia">Inteligencia Artificial</button>
+          <button class="portfolio-filter-btn" data-filter="automatizacion">Automatización</button>
+          <button class="portfolio-filter-btn" data-filter="casas-inteligentes">Casas Inteligentes</button>
+          <button class="portfolio-filter-btn" data-filter="saas">SaaS</button>
+        </div>
+
+        <!-- Contenedor Dinámico y Modular de Trabajos -->
+        <!-- NOTA PARA EL USUARIO: Cada proyecto se dibuja automáticamente desde js/app.js -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Tarjetas renderizadas dinámicamente -->
+        </div>
+
+        <div style="text-align: center; margin-top: 3.5rem;">
+          <a href="#contactanos" class="btn btn-secondary">
+            <span>¿Tienes un proyecto en mente? Contáctanos hoy</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="9 18 15 12 9 6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- =====================================================================
+         SECCIÓN: FACTURACIÓN (PORTAL DE SOLICITUD DE FACTURA)
+         ===================================================================== -->
+    <section class="section" id="facturacion">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Servicios Administrativos</div>
+          <h2 class="section-title">Portal de Facturación Fiscal</h2>
+          <p class="section-desc">
+            Solicita la emisión de tu comprobante fiscal digital (CFDI / Factura electrónica). Generamos y enviamos tus
+            archivos XML y PDF de forma automática.
+          </p>
+        </div>
+
+        <div class="billing-card">
+          <div class="billing-notice">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="8" x2="12" y2="12"></line>
+              <line x1="12" y1="16" x2="12.01" y2="16"></line>
+            </svg>
+            <div>
+              <strong>Requisitos Fiscales:</strong> Asegúrate de capturar el RFC exacto y el código postal coincidente
+              con tu Constancia de Situación Fiscal vigente para evitar cancelaciones automáticas.
+            </div>
+          </div>
+
+          <form id="billingForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="billRFC" class="form-label">
+                  <span>RFC o Identificación Fiscal *</span>
+                </label>
+                <input type="text" id="billRFC" class="form-input" placeholder="Ej: ABC120315XX9" maxlength="13"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="billRazon" class="form-label">
+                  <span>Razón Social / Nombre Legal *</span>
+                </label>
+                <input type="text" id="billRazon" class="form-input"
+                  placeholder="Ej: Soluciones Industriales S.A. de C.V." required>
+              </div>
+
+              <div class="form-group">
+                <label for="billRegimen" class="form-label">
+                  <span>Régimen Fiscal *</span>
+                </label>
+                <select id="billRegimen" class="form-select" required>
+                  <option value="601">601 - General de Ley Personas Morales</option>
+                  <option value="612">612 - Personas Físicas con Actividades Empresariales</option>
+                  <option value="626">626 - Régimen Simplificado de Confianza (RESICO)</option>
+                  <option value="605">605 - Sueldos y Salarios e Ingresos Asimilados</option>
+                  <option value="616">616 - Sin obligaciones fiscales</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="billCFDI" class="form-label">
+                  <span>Uso del CFDI *</span>
+                </label>
+                <select id="billCFDI" class="form-select" required>
+                  <option value="G03">G03 - Gastos en general</option>
+                  <option value="I08">I08 - Otra maquinaria y equipo</option>
+                  <option value="I04">I04 - Equipo de cómputo y accesorios</option>
+                  <option value="P01">P01 - Por definir</option>
+                  <option value="S01">S01 - Sin efectos fiscales</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="billTicket" class="form-label">
+                  <span>Número de Folio / Ticket / Contrato *</span>
+                </label>
+                <input type="text" id="billTicket" class="form-input" placeholder="Ej: COT-2026-8841" required>
+              </div>
+
+              <div class="form-group">
+                <label for="billEmail" class="form-label">
+                  <span>Correo para Envío de XML y PDF *</span>
+                </label>
+                <input type="email" id="billEmail" class="form-input" placeholder="facturacion@tuempresa.com" required>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 1rem;">
+              <button type="reset" class="btn btn-secondary">Limpiar Formulario</button>
+              <button type="submit" class="btn btn-primary">
+                <span>Generar Solicitud de Factura</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polyline points="9 18 15 12 9 6" />
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN: BOLSA DE EMPLEO (TALENTO & VACANTES TÉCNICAS)
+         ===================================================================== -->
+    <section class="section" id="bolsa-empleo">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Talento & Carreras</div>
+          <h2 class="section-title">Bolsa de Empleo</h2>
+          <p class="section-desc">
+            Buscamos mentes analíticas apasionadas por la automatización física, los modelos de lenguaje y el código
+            robusto. Descubre nuestras vacantes activas y postúlate.
+          </p>
+        </div>
+
+        <div class="careers-grid">
+          <!-- Vacante 1 -->
+          <div class="career-card">
+            <div>
+              <div class="career-badge">Ingeniería & Robótica</div>
+              <h3 class="career-title">Ingeniero de Automatización & PLC</h3>
+              <p class="career-desc">
+                Diseño de lógica de control en Siemens TIA Portal y Rockwell Studio 5000, puesta en marcha en sitio e
+                integración de protocolos industriales OPC UA.
+              </p>
+              <div class="career-specs">
+                <div class="career-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Tiempo Completo</span>
+                </div>
+                <div class="career-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Híbrido / En Planta</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-apply-job"
+              data-job="Ingeniero de Automatización & PLC">Postularme</button>
+          </div>
+
+          <!-- Vacante 2 -->
+          <div class="career-card">
+            <div>
+              <div class="career-badge">Inteligencia Artificial</div>
+              <h3 class="career-title">Ingeniero en Machine Learning & Visión</h3>
+              <p class="career-desc">
+                Entrenamiento y despliegue de modelos YOLO, Segment Anything y pipelines RAG para inspección en tiempo
+                real en dispositivos edge.
+              </p>
+              <div class="career-specs">
+                <div class="career-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Tiempo Completo</span>
+                </div>
+                <div class="career-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                    </path>
+                  </svg>
+                  <span>Remoto</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-apply-job"
+              data-job="Ingeniero en Machine Learning & Visión">Postularme</button>
+          </div>
+
+          <!-- Vacante 3 -->
+          <div class="career-card">
+            <div>
+              <div class="career-badge">Software Cloud</div>
+              <h3 class="career-title">Desarrollador Full-Stack SaaS</h3>
+              <p class="career-desc">
+                Construcción de dashboards de telemetría IoT, APIs de alto throughput con Node/FastAPI y frontend
+                responsivo moderno con Next.js.
+              </p>
+              <div class="career-specs">
+                <div class="career-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Tiempo Completo</span>
+                </div>
+                <div class="career-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                    </path>
+                  </svg>
+                  <span>Remoto</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-apply-job" data-job="Desarrollador Full-Stack SaaS">Postularme</button>
+          </div>
+
+          <!-- Vacante 4 -->
+          <div class="career-card">
+            <div>
+              <div class="career-badge">Domótica & IoT</div>
+              <h3 class="career-title">Especialista en Domótica & KNX</h3>
+              <p class="career-desc">
+                Diseño e integración de proyectos de hogares inteligentes de lujo: iluminación circadiana DALI,
+                climatización VRF y seguridad biométrica.
+              </p>
+              <div class="career-specs">
+                <div class="career-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                  <span>Tiempo Completo</span>
+                </div>
+                <div class="career-spec-item">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                  <span>Presencial / En Campo</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-secondary btn-apply-job"
+              data-job="Especialista en Domótica & KNX">Postularme</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SECCIÓN: CONTÁCTANOS (APIS DE WHATSAPP, INSTAGRAM, CORREO Y TIKTOK)
+         ===================================================================== -->
+    <section class="section" id="contactanos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Canales Oficiales</div>
+          <h2 class="section-title">Contáctanos</h2>
+          <p class="section-desc">
+            Conéctate con nuestro equipo técnico a través de nuestras vías directas o envía una solicitud formal de
+            consultoría.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Canales Directos e Integraciones API -->
+          <div class="contact-channels">
+            <!-- Canal WhatsApp API -->
+            <a href="#" class="channel-card" data-api="whatsapp"
+              data-message="Hola, me gustaría agendar una reunión para presentar un proyecto tecnológico.">
+              <div class="channel-info">
+                <div class="channel-icon whatsapp">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.861.884 2.802.884 3.181 0 5.767-2.586 5.767-5.766.001-3.18-2.585-5.771-5.773-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.227-.563-1.833-.764-3.003-2.617-3.095-2.739-.089-.122-.74-1.002-.74-1.921 0-.918.472-1.371.64-1.562.169-.191.369-.239.493-.239.124 0 .248.002.355.008.113.006.264-.043.413.315.155.371.531 1.298.577 1.393.046.094.077.205.016.326-.062.121-.093.197-.185.305-.093.109-.195.244-.278.328-.093.093-.19.195-.082.38.109.186.482.795 1.035 1.288.711.633 1.31.83 1.497.923.186.094.296.079.406-.047.112-.128.478-.557.606-.749.127-.191.256-.16.429-.095.174.065 1.104.52 1.295.615.191.096.319.143.365.223.047.079.047.46-.097.865z" />
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <h4>WhatsApp Directo</h4>
+                  <p>Atención inmediata con un asesor de ingeniería</p>
+                </div>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </a>
+
+            <!-- Canal Correo Corporativo -->
+            <a href="#" class="channel-card" data-api="correo">
+              <div class="channel-info">
+                <div class="channel-icon email">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <h4>Correo Corporativo</h4>
+                  <p>contacto@consultoriatech.com</p>
+                </div>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </a>
+
+            <!-- Canal Instagram Directo -->
+            <a href="#" class="channel-card" data-api="instagram">
+              <div class="channel-info">
+                <div class="channel-icon instagram">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <h4>Instagram</h4>
+                  <p>@consultoria.tech — Demostraciones y backstage</p>
+                </div>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </a>
+
+            <!-- Canal TikTok Directo -->
+            <a href="#" class="channel-card" data-api="tiktok">
+              <div class="channel-info">
+                <div class="channel-icon tiktok">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.11V9.43a6.38 6.38 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.76a8.2 8.2 0 0 0 4.76 1.48V6.79c-.58 0-1.15-.03-1.7-.1z" />
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <h4>TikTok</h4>
+                  <p>@consultoria.tech — Robótica y pruebas en laboratorio</p>
+                </div>
+              </div>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- Formulario de Mensaje Directo -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.5rem;">Envíanos un Mensaje</h3>
+            <p style="color: var(--color-gris); font-size: 0.9rem; margin-bottom: 2rem;">
+              Te asignaremos un especialista técnico para evaluar la factibilidad de tu proyecto.
+            </p>
+
+            <form id="contactForm">
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="contactName" class="form-label">Nombre Completo *</label>
+                <input type="text" id="contactName" class="form-input" placeholder="Ingresa tu nombre o empresa"
+                  required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="contactEmail" class="form-label">Correo Electrónico *</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="correo@empresa.com" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.25rem;">
+                <label for="contactService" class="form-label">Área de Interés *</label>
+                <select id="contactService" class="form-select" required>
+                  <option value="Inteligencia Artificial">Inteligencia Artificial & Modelos Predictivos</option>
+                  <option value="Automatización Industrial">Automatización Industrial & Control PLC</option>
+                  <option value="Casas Inteligentes">Casas Inteligentes & Domótica KNX</option>
+                  <option value="Software SaaS">Software as a Service (SaaS)</option>
+                  <option value="Alianzas y Otros">Alianzas Comerciales / Otro Asunto</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1.75rem;">
+                <label for="contactMessage" class="form-label">Detalles del Requerimiento *</label>
+                <textarea id="contactMessage" class="form-textarea" rows="4"
+                  placeholder="Describe brevemente tus objetivos o necesidades técnicas..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <span>Enviar Consulta Formal</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =====================================================================
+       FOOTER (PIE DE PÁGINA CORPORATIVO)
+       ===================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <img src="logo.PNG" alt="Logotipo Consultoría" class="footer-brand-logo">
+          <p class="footer-bio">
+            Firma especializada en consultoría e ingeniería aplicada en Inteligencia Artificial, sistemas de
+            automatización industrial, domótica residencial de vanguardia y plataformas SaaS.
+          </p>
+          <div class="footer-social-links">
+            <a href="#" class="social-icon-btn" data-api="whatsapp" aria-label="WhatsApp">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.586 1.861.884 2.802.884 3.181 0 5.767-2.586 5.767-5.766.001-3.18-2.585-5.771-5.773-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.075-2.227-.563-1.833-.764-3.003-2.617-3.095-2.739-.089-.122-.74-1.002-.74-1.921 0-.918.472-1.371.64-1.562.169-.191.369-.239.493-.239.124 0 .248.002.355.008.113.006.264-.043.413.315.155.371.531 1.298.577 1.393.046.094.077.205.016.326-.062.121-.093.197-.185.305-.093.109-.195.244-.278.328-.093.093-.19.195-.082.38.109.186.482.795 1.035 1.288.711.633 1.31.83 1.497.923.186.094.296.079.406-.047.112-.128.478-.557.606-.749.127-.191.256-.16.429-.095.174.065 1.104.52 1.295.615.191.096.319.143.365.223.047.079.047.46-.097.865z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-api="instagram" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-api="tiktok" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.11V9.43a6.38 6.38 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.76a8.2 8.2 0 0 0 4.76 1.48V6.79c-.58 0-1.15-.03-1.7-.1z" />
+              </svg>
+            </a>
+            <a href="#" class="social-icon-btn" data-api="correo" aria-label="Correo">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">Quiénes somos</a></li>
+            <li><a href="#servicios">Servicios & Soluciones</a></li>
+            <li><a href="#nuestros-trabajos">Nuestros trabajos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Gestión</h4>
+          <ul class="footer-links">
+            <li><a href="#facturacion">Portal de Facturación</a></li>
+            <li><a href="#contactanos">Contáctanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Isotipo & Sello</h4>
+          <div style="display: flex; align-items: center; gap: 1rem; margin-top: 0.5rem;">
+            <img src="logo2.PNG" alt="Isotipo Oficial" style="height: 52px; width: auto;">
+            <div style="font-size: 0.82rem; color: var(--color-gris);">
+              Garantía de arquitectura escalable, código limpio y apego a normativas.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> Consultoría Tecnológica. Todos los derechos reservados.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="#" style="color: var(--color-gris-dark);">Aviso de Privacidad</a>
+          <a href="#" style="color: var(--color-gris-dark);">Términos de Servicio</a>
+          <a href="#" style="color: var(--color-gris-dark);">Seguridad y Cumplimiento</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
